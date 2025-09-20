@@ -80,7 +80,7 @@ def login():
 @app.route('/protected')
 @token_required
 def protected(current_user):
-    """Protected route that requires authentication"""
+    """Protected route * requires authentication"""
     return jsonify({
         'message': f'Hello {current_user}! This is a protected route.',
         'user': current_user,
